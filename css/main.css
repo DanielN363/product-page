@@ -12,28 +12,37 @@ html {
 
 body {
   margin: 0;
+  margin: 0 10% 0 10%;
   /* include your font family and default line-height */
 }
 
-img {
-  width: 100%;
-}
-
 .wrapper {
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
   max-width: 1400px;
   margin: 0 auto;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.button {
+  border: .2rem solid rgba(55, 131, 163, .4);
+  color: #3783a3;
+  text-decoration: none;
+  padding: .5em 1em .6em;
+  margin-top: auto;
+  border-radius: .3rem;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  display: block;
 }
 
 header nav ul {
   list-style-type: none;
   display: flex;
   gap: 1.5rem;
+  justify-content: center;
 }
 
 header nav ul li a {
