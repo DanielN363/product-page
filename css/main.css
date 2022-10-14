@@ -57,8 +57,15 @@ body {
   margin: 1.5rem 0 0 0;
   border-radius: .3rem;
   text-align: center;
+  background-color: #000;
+  font-weight: bold;
+
 }
 
+.button a {
+  color: #fff;
+  text-decoration: none;
+}
 img {
   width: 100%;
   display: block;
@@ -103,6 +110,11 @@ figure {
   gap: 1rem;
   max-width: 400px;
 }
+
+.reviews {
+  display: grid;
+}
+
 footer {
   text-align: center;
 }
@@ -116,12 +128,28 @@ footer {
   /* .top-images {
     grid-template-columns: 4fr 1fr;
   } */
+  .button {
+    max-width: 50%;
+
+
+  }
+
+  .text {
+    max-width: 50%;
+  }
+
   .wrapper {
     max-width: 768px;
   }
 
+  .reviews {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+  }
+
   .top-images {
-    grid-template-columns: 76% 24%;
+    grid-template-columns: 75% 23%;
     grid-template-areas:
       "img1 img2"
       "img1 img3"
@@ -150,13 +178,20 @@ footer {
 
   /* section {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr; */
-  }
+    grid-template-rows: 1fr;
+  }*/
 
 }
 
 @media only screen and (min-width: 75em) {
 
+  .wrapper {
+    max-width: 1400px;
+  }
+
+  .browsed {
+    max-width: 1400px;
+  }
 
 }
 
